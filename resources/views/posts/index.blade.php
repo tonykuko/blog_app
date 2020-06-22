@@ -24,6 +24,6 @@
             @endforeach
                 {{$posts->links()}}
             @else
-            <p>No posts found</p>
+            <p>No posts were found</p>
         @endif
 @endsection
