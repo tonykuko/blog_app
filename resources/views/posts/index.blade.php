@@ -2,15 +2,15 @@
 
 @section('content')
     
-    <h1 style="margin-top: 10px">Blog Posts</h1>
+    <h3 style="margin-top: 10px">Blog Posts</h3>
     <br>
         @if(count($posts) > 0)
             @foreach(array_chunk($posts->all(), 3) as $chunk)
                 <div class="row">
                     @foreach($chunk as $post)
-                        <div class="col-sm-4" style="margin-bottom: 20px">
+                        <div class="col-sm-4">
                             <a href="/posts/{{$post->id}}">
-                                <div class="card">
+                                <div class="blog-card">
                                     <img class="card-img-top" src="/storage/cover_images/{{$post->cover_image}}">
                                     <div class="card-body">
                                         <h3>{{$post->title}}</h3>

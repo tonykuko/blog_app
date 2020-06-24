@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">Users</div>
 
-                <div class="card-body">
+                <div class="card-body-table">
                     <table class="table table-dark table-striped">
                         <thead>
                             <tr>

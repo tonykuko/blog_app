@@ -7,8 +7,8 @@
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    <a href="/posts/create" style="text-align:center" class="bt btn-primary btn-lg btn-block">Create Post</a>
+                <div class="card-body-dash">
+                    <a href="/posts/create" style="text-align:center" class="btn btn-primary btn-lg btn-block">Create Post</a>
                     <br>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
