@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header-dash">Dashboard</div>
 
                 <div class="card-body-dash">
                     <a href="/posts/create" style="text-align:center" class="btn btn-primary btn-lg btn-block">Create Post</a>

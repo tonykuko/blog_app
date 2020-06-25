@@ -17,10 +17,10 @@
     <h1 style="margin-top: 5px">{{$post->title}}</h1>
     <hr>
         <small>Written on {{$post->created_at->format('d.m.Y H:i')}} by {{$post->user->name}}</small>
-    <hr>
-    <img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}">
-    <br><br>                    
-    <div>
+    <hr>                 
+    <div class="post-body">
+        <img src="/storage/cover_images/{{$post->cover_image}}">
+        <br><br>   
          {!!$post->body!!}
     </div>
 @endsection

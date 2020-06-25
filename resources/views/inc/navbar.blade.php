@@ -1,5 +1,7 @@
+<link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
+
 <nav class="navbar sticky-top">
-  <div class="brand-title">Anthony's Blog</div>
+  <a class="navbar-brand" href="/">Anthony's Blog</a>
   <a href="#" class="toggle-button">
     <span class="bar"></span>
     <span class="bar"></span>
@@ -49,26 +51,28 @@
 <style>
         * {
           box-sizing: border-box;
-        }
+      }
 
-        body {
+      body {
           margin: 0;
           padding: 0;
-        }
+      }
 
-        .navbar {
+      .navbar {
           display: flex;
           position: sticky;
           justify-content: space-between;
           align-items: center;
-          background-color: rgb(0, 23, 66);
+          background-color: #1c2836;
           color: white;
           min-height: 50px;
-        }
+      }
 
-        .brand-title {
-          font-size: 1.5rem;
+      .navbar-brand {
+          font-size: 1.15rem;
           margin: .5rem;
+          color: aliceblue;
+          font-family: 'Shojumaru', cursive;
       }
 
       .navbar-links {
@@ -93,7 +97,7 @@
       }
 
       .navbar-links li:hover {
-          background-color: rgb(41, 50, 131);
+          background-color: #2b3d52;
       }
 
       .toggle-button {
@@ -115,12 +119,12 @@
       }
 
       .dropdown-menu {
-          background-color: rgb(0, 23, 66);
+          background-color: #1c2836;
           color: white;
       }
 
       .dropdown-menu a:hover {
-          background-color: rgb(41, 50, 131);
+          background-color: #2b3d52;
           color: white;
       }
 

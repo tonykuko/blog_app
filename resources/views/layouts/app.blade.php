@@ -26,17 +26,17 @@
         
 <style>
         html, body {
-            background-color: #2b3035;
+            background-color: #212e3f;
             font-family: 'Enriqueta', serif;
             color: #e0e0e0;
-        }
-
-        .jumbotron {
-            padding: 2rem 1rem;
-            margin-bottom: 2rem;
-            background-color: #343A40;
-            color: #e0e0e0;
-            border-radius: 0.3rem;
+            background-image: url(Tree-On-The-Horizon.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
         }
 
         .card {
@@ -48,10 +48,20 @@
             min-width: 0;
             word-wrap: break-word;
             color: #ffffff;
-            background-color: #343A40;
+            background-color: #1c2836;
             background-clip: border-box;
             border: 0px solid rgba(0, 0, 0, 0.125);
-            border-radius: 0.25rem;
+            border-radius: 10px;
+        }
+
+        .card-header {
+            background-color: #2b3d52;
+        }
+
+        .card-header-dash {
+            background-color: #2b3d52;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 15px;
         }
 
         .blog-card {
@@ -63,13 +73,41 @@
             min-width: 0;
             word-wrap: break-word;
             color: #ffffff;
-            background-color: #343A40;
+            background-color: #1c2836;
             background-clip: border-box;
             border: 0px solid rgba(0, 0, 0, 0.125);
             border-radius: 10px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            -webkit-filter: opacity(0.85);
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 0;
+            border-top: hidden;
+        }
+
+        .table th,
+        .table td {
+            border-top: hidden;
+        }
+
+        .table tbody + tbody {
+            border-top: hidden;
+        }
+
+        .table thead th {
+            border-bottom: hidden;
         }
         
+        .table-striped {
+            background-color: #1c2836;
+        }
+
+        .table-striped>tbody>tr:nth-child(odd)>td, 
+        .table-striped>tbody>tr:nth-child(odd)>th {
+            background-color: #2b3d52;
+        }
+
         .card-img-top {
             width: 100%;
             flex-shrink: 0;
@@ -98,6 +136,16 @@
         .btn-block {
             width: 50%;
             margin-left: 25%;
+        }
+
+        .post-body {
+            background-color: #1c2836;
+            border-radius: 10px;
+        }
+
+        .post-body img {
+            width: 100%;
+            object-fit: cover;
         }
     </style>
 
