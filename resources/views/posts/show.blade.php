@@ -20,7 +20,9 @@
     <hr>                 
     <div class="post-body">
         <img src="/storage/cover_images/{{$post->cover_image}}">
-        <br><br>   
-         {!!$post->body!!}
+        <br><br>
+        <div class="text-prop">
+            {!!$post->body!!}
+        </div>   
     </div>
 @endsection

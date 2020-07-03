@@ -11,25 +11,18 @@
 
     <title>{{ config('app.name', 'Anthonys Blog') }}</title>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
         
 <style>
         html, body {
             background-color: #212e3f;
             font-family: 'Enriqueta', serif;
-            color: #e0e0e0;
-            background-image: url(Tree-On-The-Horizon.jpg);
+            color: #fafafa;
+            background-image: url(dark-textured-bg.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center; 
@@ -52,6 +45,7 @@
             background-clip: border-box;
             border: 0px solid rgba(0, 0, 0, 0.125);
             border-radius: 10px;
+            -webkit-filter: opacity(0.95);
         }
 
         .card-header {
@@ -73,7 +67,7 @@
             min-width: 0;
             word-wrap: break-word;
             color: #ffffff;
-            background-color: #1c2836;
+            background-color: #00000088;
             background-clip: border-box;
             border: 0px solid rgba(0, 0, 0, 0.125);
             border-radius: 10px;
@@ -140,21 +134,36 @@
 
         .post-body {
             background-color: #1c2836;
-            border-radius: 10px;
+            border-radius: 0px;
         }
 
         .post-body img {
             width: 100%;
             object-fit: cover;
         }
+
+        .text-prop {
+            margin: 0px 10px 10px 10px;
+            text-align: justify;
+        }
+
+        .mastfoot {
+            color: rgba(255, 255, 255, .5);
+        }
     </style>
 
 </head>
 <body>
-        @include('inc.navbar')
-        <div class="container">
-            @include('inc.messages')
-            @yield('content')
-        </div>
+    @include('inc.navbar')
+    <div class="container">
+        @include('inc.messages')
+        @yield('content')
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
 </body>
 </html>
