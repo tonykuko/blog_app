@@ -19,17 +19,9 @@
         
 <style>
         html, body {
-            background-color: #212e3f;
+            background-color: rgba(42, 42, 46, 1);
             font-family: 'Enriqueta', serif;
             color: #fafafa;
-            background-image: url(dark-textured-bg.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            background-size: cover;
-            -o-background-size: cover;
         }
 
         .card {
@@ -41,7 +33,7 @@
             min-width: 0;
             word-wrap: break-word;
             color: #ffffff;
-            background-color: #1c2836;
+            background-color: rgb(56, 56, 61);
             background-clip: border-box;
             border: 0px solid rgba(0, 0, 0, 0.125);
             border-radius: 10px;
@@ -49,11 +41,11 @@
         }
 
         .card-header {
-            background-color: #2b3d52;
+            background-color: rgb(64, 64, 70);
         }
 
         .card-header-dash {
-            background-color: #2b3d52;
+            background-color: rgb(60, 60, 65);
             padding: 0.75rem 1.25rem;
             margin-bottom: 15px;
         }
@@ -67,11 +59,10 @@
             min-width: 0;
             word-wrap: break-word;
             color: #ffffff;
-            background-color: #00000088;
+            background-color: rgb(56, 56, 61);
             background-clip: border-box;
             border: 0px solid rgba(0, 0, 0, 0.125);
-            border-radius: 10px;
-            -webkit-filter: opacity(0.85);
+            border-radius: 5px;
         }
 
         .table {
@@ -94,12 +85,12 @@
         }
         
         .table-striped {
-            background-color: #1c2836;
+            background-color: rgb(56, 56, 61);
         }
 
         .table-striped>tbody>tr:nth-child(odd)>td, 
         .table-striped>tbody>tr:nth-child(odd)>th {
-            background-color: #2b3d52;
+            background-color: rgb(56, 56, 61);
         }
 
         .card-img-top {
@@ -132,8 +123,11 @@
             margin-left: 25%;
         }
 
+        .post-heading {
+            text-align: left;
+        }
+
         .post-body {
-            background-color: #1c2836;
             border-radius: 0px;
         }
 
@@ -143,8 +137,12 @@
         }
 
         .text-prop {
-            margin: 0px 10px 10px 10px;
+            margin: 0px 0px 10px;
             text-align: justify;
+        }
+
+        .small-info {
+            text-align: center;
         }
 
         .mastfoot {

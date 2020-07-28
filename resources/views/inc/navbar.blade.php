@@ -51,7 +51,8 @@
 
 <style>
   .bg-dark {
-    background-color: #081a2c !important;
+    background-color: rgb(56, 56, 61) !important;
+    opacity: 0.95;
   }
 
   .navbar-brand {
@@ -67,17 +68,16 @@
   }
 
   .nav-links li:hover {
-    background-color: #0e2d4d;
+    background-color: rgb(64, 64, 70);
   }
 
   .dropdown-menu {
-    background-color: #081a2c;
+    background-color: rgb(56, 56, 61);
     color: white;
   }
 
   .dropdown-menu a:hover {
-    background-color: #0e2d4d;
+    background-color: rgb(64, 64, 70);
     color: white;
   }
-
 </style>

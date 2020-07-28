@@ -13,11 +13,13 @@
             @endif
         @endif
     </div>
-    <br>  
-    <h1 style="margin-top: 5px">{{$post->title}}</h1>
+    <br>
+    <div class="post-heading">  
+        <h1 style="margin-top: 5px">{{$post->title}}</h1>
+    </div>
     <hr>
-        <small>Written on {{$post->created_at->format('d.m.Y H:i')}} by {{$post->user->name}}</small>
-    <hr>                 
+        <small>Written on {{$post->created_at->format('d/m/Y H:i')}} by {{$post->user->name}}</small>
+    <hr>                
     <div class="post-body">
         <img src="/storage/cover_images/{{$post->cover_image}}">
         <br><br>
